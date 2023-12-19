@@ -1,0 +1,7 @@
+.container {
+  padding: 0 1rem;
+
+  & div:not(:last-child) {
+    border-bottom: 1px solid var(--secondary);
+  }
+}
