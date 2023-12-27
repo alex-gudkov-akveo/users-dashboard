@@ -1,7 +1,7 @@
 ## Getting Started
 
 - In order to run the project, you must first install the dependencies `npm install`.
-- Then you need to create a file `.env.local` with environment variables for local development `VERCEL_URL=localhost:3000` and `HTTP_PROTOCOL=http`.
+- Then you need to create a file `.env.local` with environment variables for local development `APP_BASE_URL=localhost:3000` and `APP_HTTP_PROTOCOL=http`.
 - After that, you can run the project for local develompent with the command `npm run dev`
 
 ## Implemented functionality

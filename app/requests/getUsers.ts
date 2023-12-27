@@ -4,7 +4,7 @@ import type UsersFilter from '../types/UsersFilter';
 const getUsers = async (params: UsersFilter): Promise<User[] | null> => {
   try {
     const data = await fetch(
-      `${process.env.HTTP_PROTOCOL}://${process.env.VERCEL_URL}/api/users`,
+      `${process.env.APP_HTTP_PROTOCOL}://${process.env.APP_BASE_URL}/api/users`,
       {
         method: 'POST',
         body: JSON.stringify(params),

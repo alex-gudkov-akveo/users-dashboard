@@ -7,7 +7,7 @@ type getUserParams = {
 const getUser = async ({ id }: getUserParams): Promise<User | null> => {
   try {
     const data = await fetch(
-      `${process.env.HTTP_PROTOCOL}://${process.env.VERCEL_URL}/api/users/${id}`,
+      `${process.env.APP_HTTP_PROTOCOL}://${process.env.APP_BASE_URL}/api/users/${id}`,
       {
         method: 'GET',
         cache: 'force-cache'

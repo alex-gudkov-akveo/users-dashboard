@@ -7,8 +7,8 @@ global.fetch = jest.fn(() =>
 );
 
 process.env = Object.assign(process.env, {
-  HTTP_PROTOCOL: 'http',
-  VERCEL_URL: 'locahost:3000'
+  APP_HTTP_PROTOCOL: 'http',
+  APP_BASE_URL: 'locahost:3000'
 });
 
 describe('getUser', () => {
